@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+
+  <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body>
+  <section class="checkout-section">
+    <div class="checkout-heading">
+      <h1>Checkout</h1>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+      <div class="progress-step active" data-step="1">1</div>
+      <div class="progress-step" data-step="2">2</div>
+      <div class="progress-step" data-step="3">3</div>
+    </div>
+
+    <!-- Step 1: Shipping Details -->
+    <div class="step step-1 active">
+      <h2>Shipping Details</h2>
+      <form class="checkout-form">
+        <!-- Existing fields -->
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="tel" id="contact" placeholder="Contact Number" required>
+
+        <!-- New fields -->
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="city" placeholder="City" required>
+        <input type="text" id="state" placeholder="State" required>
+        <input type="text" id="postal" placeholder="Postal Code" required>
+        <input type="text" id="country" placeholder="Country" required>
+      </form>
+      <button class="next-btn" onclick="nextStep(2)">Next</button>
+    </div>
+
+
+    <!-- Step 2: Payment & Order Method -->
+    <div class="step step-2">
+      <h2>Order & Payment Method</h2>
+      <div class="order-method">
+        <h3>Order Method</h3>
+        <label><input type="radio" name="order-method" value="pickup" checked> Pickup</label>
+        <label><input type="radio" name="order-method" value="delivery"> Home Delivery</label>
+      </div>
+      <div class="payment-method">
+        <h3>Payment Method</h3>
+        <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+        <label><input type="radio" name="payment" value="card"> Credit/Debit Card</label>
+      </div>
+      <button class="prev-btn" onclick="prevStep(1)">Previous</button>
+      <button class="next-btn" onclick="nextStep(3)">Next</button>
+    </div>
+
+    <!-- Step 3: Payment Summary -->
+    <div class="step step-3">
+      <h2>Payment Summary</h2>
+
+      <!-- Cart Items -->
+      <div class="cart-items"></div>
+
+
+      <!-- Shipping Info Summary -->
+      <div class="summary-details shipping-info">
+        <h3>Shipping Info</h3>
+        <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+        <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+        <p><strong>Address:</strong> <span id="confirm-address"></span></p>
+        <p><strong>City:</strong> <span id="confirm-city"></span></p>
+        <p><strong>State:</strong> <span id="confirm-state"></span></p>
+        <p><strong>Postal Code:</strong> <span id="confirm-postal"></span></p>
+        <p><strong>Country:</strong> <span id="confirm-country"></span></p>
+        <p><strong>Contact:</strong> <span id="confirm-contact"></span></p>
+      </div>
+
+      <!-- Summary Details (Subtotal, Shipping, Total) -->
+      <div class="summary-details">
+        <p>Subtotal: <span class="subtotal-amount">₹0.00</span></p>
+        <p>Shipping Fee: <span class="shipping-amount">₹0.00</span></p>
+        <p><strong>Total: <span class="total-amount">₹0.00</span></strong></p>
+      </div>
+      <!-- NEW: Delivery Date Dropdown -->
+      <div class="delivery-date-selection">
+        <label for="deliveryDateSelect">Select Delivery Date:</label>
+        <select id="deliveryDateSelect" required>
+          <!-- Options will be added dynamically -->
+        </select>
+      </div>
+      <!-- Live display of the chosen delivery date -->
+      <div class="selected-delivery-date">
+        <p><strong>Selected Delivery Date:</strong> <span id="selectedDeliveryDate"></span></p>
+      </div>
+
+      <button class="prev-btn" onclick="prevStep(2)">Previous</button>
+      <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p id="popupMessage"></p>
+        <button id="popupOkBtn" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+
+
+  </section>
+  <script src="../js/checkout.js"></script>
+
+</body>
+
+</html>

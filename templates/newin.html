@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New In </title>
+    <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+
+    <link rel="stylesheet" href="../css/page.css">
+    <script src="../js/page.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/header.css">
+    <div id="header-placeholder"></div>
+    <script src="../js/header.js"></script>
+
+
+
+    <section class="rings-collection">
+        <div class="rings-title">New In <div class="filter-sort">
+            </div>
+            <span class="allgin-sort">
+                <p class="subtitle">" Discover Our Latest Arrivals – Fresh Styles Just for You!"</p>
+                <select id="sort-options">
+                    <option value="default">Sort by Position</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="name-a-z">Name: A-Z</option>
+                    <option value="name-z-a">Name: Z-A</option>
+                </select>
+            </span>
+        </div>
+
+        <div class="product-grid">
+            <!-- Rings -->
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newring1.jpg" alt="Eternal Love Ring">
+                <h3>Eternal Love - Diamond Ring</h3>
+                <p class="price">₹5,499.00 <span class="old-price">₹7,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newring2.jpg" alt="Moonlight Opal Ring">
+                <h3>Moonlight - Opal Silver Ring</h3>
+                <p class="price">₹2,199.00 <span class="old-price">₹4,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <!-- Necklaces -->
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newnecklace4.jpg" alt="Golden Crescent Necklace">
+                <h3>Golden - Pendant Necklace</h3>
+                <p class="price">₹2,999.00 <span class="old-price">₹4,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newnecklace5.jpg" alt="Starlit Sapphire Necklace">
+                <h3>Starlit - Sapphire Gem Necklace</h3>
+                <p class="price">₹5,599.00 <span class="old-price">₹6,800.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <!-- Earrings -->
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newearring4.jpg" alt="Rose Gold Hoop Earrings">
+                <h3>Rose Gold - Classic Hoop Earrings</h3>
+                <p class="price">₹2,199.00 <span class="old-price">₹3,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newearring5.jpg" alt="Pearl Drop Earrings">
+                <h3>Pearl Drop - Elegant Earrings</h3>
+                <p class="price">₹799.00 <span class="old-price">₹1,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <!-- Bracelets -->
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newbracelet3.jpg" alt="Infinity Charm Bracelet">
+                <h3>Infinity Charm - Gold Bracelet</h3>
+                <p class="price">₹3,799.00 <span class="old-price">₹5,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newbracelet4.jpg" alt="Crystal Bead Bracelet">
+                <h3>Crystal Bead - Sterling Silver Bracelet</h3>
+                <p class="price">₹1,999.00 <span class="old-price">₹3,800.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <!-- Bonus Products -->
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newhoop.jpg" alt="Kendall Large Hoop Earrings">
+                <h3>Kendall Large Hoop Earrings</h3>
+                <p class="price">₹1,999.00 <span class="old-price">₹2,800.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newearingg.jpg" alt="Hailey Rectangle Earrings">
+                <h3>Hailey Rectangle Earrings</h3>
+                <p class="price">₹3,499.00 <span class="old-price">₹5,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newnecklacee.jpg" alt="Gigi Pearl Necklace">
+                <h3>Gigi Pearl Necklace</h3>
+                <p class="price">₹2,299.00 <span class="old-price">₹3,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="label new">New In</span>
+                <img src="../images/newnecklace6.jpg" alt="Ruby Heart Necklace">
+                <h3>Ruby Heart - Love Necklace</h3>
+                <p class="price">₹5,999.00 <span class="old-price">₹7,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+    </section>
+
+    <link rel="stylesheet" href="../css/footer.css">
+    <div id="footer-placeholder"></div>
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/add_to_cart.js"></script>
+
+</body>
+
+</html>

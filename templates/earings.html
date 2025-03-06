@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earrings Collection</title>
+    <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+
+    <link rel="stylesheet" href="../css/page.css">
+    <script src="../js/page.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/header.css">
+    <div id="header-placeholder"></div>
+    <script src="../js/header.js"></script>
+
+    <section class="rings-collection">
+        <div class="rings-title">Earrings<div class="filter-sort">
+            </div>
+            <span class="allgin-sort">
+                <p class="subtitle">"Earrings that Get Heads Turning, Hearts Dancing"!!</p>
+                <select id="sort-options">
+                    <option value="default">Sort by Position</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="name-a-z">Name: A-Z</option>
+                    <option value="name-z-a">Name: Z-A</option>
+                </select>
+            </span>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../images/earring1.jpg" alt="Silver Hoop Earrings">
+                <h3>Elegant Hoop - Silver Earrings</h3>
+                <p class="price">₹699.00 <span class="old-price">₹999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring2.jpg" alt="Pearl Drop Earrings">
+                <h3>Graceful Drop - Pearl Earrings</h3>
+                <p class="price">₹599.00 <span class="old-price">₹899.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring3.jpg" alt="Stud Earrings">
+                <h3>Classic Stud - Gold Earrings</h3>
+                <p class="price">₹1,899.00 <span class="old-price">₹2,200.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring4.jpg" alt="Crystal Dangle Earrings">
+                <h3>Crystal Shine - Dangle Earrings</h3>
+                <p class="price">₹1,550.00 <span class="old-price">₹2,199.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring5.jpg" alt="Diamond Stud Earrings">
+                <h3>Eternal - Diamond Stud Earrings</h3>
+                <p class="price">₹5,999.00 <span class="old-price">₹6,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring6.jpg" alt="Infinity Loop Earrings">
+                <h3>Infinity Glow - Platinum Earrings</h3>
+                <p class="price">₹4,799.00 <span class="old-price">₹5,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring7.jpg" alt="Pearl Cluster Earrings">
+                <h3>Pearl Cluster - Elegant Earrings</h3>
+                <p class="price">₹1,150.00 <span class="old-price">₹2,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring8.jpg" alt="Zircon Stone Earrings">
+                <h3>Starlight Spark - Zircon Earrings</h3>
+                <p class="price">₹999.00 <span class="old-price">₹1,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring9.jpg" alt="Opal Vintage Earrings">
+                <h3>Mystic Bow - Vintage Earrings</h3>
+                <p class="price">₹650.00 <span class="old-price">₹899.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring10.jpg" alt="Ruby Royale Earrings">
+                <h3>Ruby Royale - Gemstone Earrings</h3>
+                <p class="price">₹5,599.00 <span class="old-price">₹7,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring11.jpg" alt="Golden Twirl Earrings">
+                <h3>Golden Twirl - Designer Earrings</h3>
+                <p class="price">₹1,550.00 <span class="old-price">₹2,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring12.jpg" alt="Sapphire Elegance Earrings">
+                <h3>Sapphire Elegance - Royal Blue Earrings</h3>
+                <p class="price">₹5,899.00 <span class="old-price">₹7,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring13.jpg" alt="Rose Gold Bloom Earrings">
+                <h3>Rose Gold - Fashion Earrings</h3>
+                <p class="price">₹2,999.00 <span class="old-price">₹4,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring14.jpg" alt="Dazzling Diamond Earrings">
+                <h3> Diamond - Engagement Earrings</h3>
+                <p class="price">₹7,499.00 <span class="old-price">₹9,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring15.jpg" alt="Silver Spark Earrings">
+                <h3>Silver Spark - Sterling Earrings</h3>
+                <p class="price">₹999.00 <span class="old-price">₹1,599.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring16.jpg" alt="Celestial Star Earrings">
+                <h3>Celestial Star - Statement Earrings</h3>
+                <p class="price">₹999.00 <span class="old-price">₹1,699.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring17.jpg" alt="Heart Earrings">
+                <h3>Golden Heart - Mystic Earrings</h3>
+                <p class="price">₹799.00 <span class="old-price">₹1,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring18.jpg" alt="Glowing Halo Earrings">
+                <h3>Glowing Halo - Crystal Earrings</h3>
+                <p class="price">₹999.00 <span class="old-price">₹1,399.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring19.jpg" alt="Floral Gold Earrings">
+                <h3>Floral Charm - Gold Earrings</h3>
+                <p class="price">₹2,799.00 <span class="old-price">₹4,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/earring20.jpg" alt="Twist Loop Earrings">
+                <h3>Twist Loop - Modern Earrings</h3>
+                <p class="price">₹3,499.00 <span class="old-price">₹5,200.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="../css/footer.css">
+    <div id="footer-placeholder"></div>
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/add_to_cart.js"></script>
+</body>
+
+</html>

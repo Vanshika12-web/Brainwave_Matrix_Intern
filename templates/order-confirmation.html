@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmation</title>
+  <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+
+  <link rel="stylesheet" href="../css/confirmation.css" />
+  <style>
+    /* Additional CSS for order details */
+    .order-details {
+      margin: 20px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .order-details p {
+      margin: 5px 0;
+    }
+
+    .order-details strong {
+      color: #4caf50;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="confirmation-section">
+    <div class="confirmation-content">
+      <!-- SVG Checkmark -->
+      <svg class="confirmation-icon" width="80" height="80" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#4caf50" stroke-width="2" fill="none" />
+        <path d="M7 12l3 3 6-6" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+
+      <h1>Order Confirmed!</h1>
+      <p>Thank you for your purchase. Your order has been successfully placed.</p>
+
+      <!-- Order Details -->
+      <div class="order-details">
+        <p><strong>Order ID:</strong> <span id="orderId"></span></p>
+        <p><strong>Order Date:</strong> <span id="orderDate"></span></p>
+      </div>
+
+      <p>You will receive a confirmation email shortly.</p>
+      <button onclick="goToHome()">Back to Home</button>
+    </div>
+  </section>
+
+  <script>
+    function goToHome() {
+      window.location.href = "index.html"; // Change to your actual homepage URL
+    }
+
+    // Generate a unique order ID using current timestamp + random string
+    function generateOrderId() {
+      const randomPart = Math.random().toString(36).substring(2, 8).toUpperCase();
+      return 'ORD-' + Date.now() + '-' + randomPart;
+    }
+
+    // Set order details on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      const orderIdElem = document.getElementById("orderId");
+      const orderDateElem = document.getElementById("orderDate");
+
+      if (orderIdElem) {
+        orderIdElem.textContent = generateOrderId();
+      }
+      if (orderDateElem) {
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        orderDateElem.textContent = now.toLocaleDateString('en-US', options);
+      }
+    });
+  </script>
+</body>
+
+</html>

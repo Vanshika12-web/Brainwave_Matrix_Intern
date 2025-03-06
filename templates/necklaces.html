@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necklaces Collection</title>
+    <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+
+    <link rel="stylesheet" href="../css/page.css">
+    <script src="../js/page.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/header.css">
+    <div id="header-placeholder"></div>
+    <script src="../js/header.js"></script>
+
+
+
+    <section class="rings-collection">
+        <div class="rings-title">Necklaces<div class="filter-sort">
+            </div>
+            <span class="allgin-sort">
+                <p class="subtitle">"Stay on-trend with our collection of minimalist necklaces"!!</p>
+                <select id="sort-options">
+                    <option value="default">Sort by Position</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="name-a-z">Name: A-Z</option>
+                    <option value="name-z-a">Name: Z-A</option>
+                </select>
+            </span>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../images/necklace1.jpg" alt="Gold Plated Necklace">
+                <h3>Golden Grace - Plated Necklace</h3>
+                <p class="price">₹1,599.00 <span class="old-price">₹1,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace2.jpg" alt="Pearl Elegance Necklace">
+                <h3>Pearl Elegance - Classic Necklace</h3>
+                <p class="price">₹1,299.00 <span class="old-price">₹1,599.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace3.jpg" alt="Diamond Studded Necklace">
+                <h3>Diamond - Studded Necklace</h3>
+                <p class="price">₹5,999.00 <span class="old-price">₹7,499.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace4.jpg" alt="Sapphire Stone Necklace">
+                <h3>Sapphire Bliss - Stone Necklace</h3>
+                <p class="price">₹4,599.00 <span class="old-price">₹5,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace5.jpg" alt="Emerald Pendant Necklace">
+                <h3>Emerald Glow - Pendant Necklace</h3>
+                <p class="price">₹3,999.00 <span class="old-price">₹5,299.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace6.jpg" alt="Ruby Gem Necklace">
+                <h3>Ruby Radiance - Gem Necklace</h3>
+                <p class="price">₹6,599.00 <span class="old-price">₹7,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace7.jpg" alt="Platinum Chain Necklace">
+                <h3>Infinity Shine - Platinum Necklace</h3>
+                <p class="price">₹7,999.00 <span class="old-price">₹9,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace8.jpg" alt="Rose Gold Choker">
+                <h3>Rose Gold - Elegant Choker</h3>
+                <p class="price">₹2,999.00 <span class="old-price">₹4,099.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace9.jpg" alt="Boho Beaded Necklace">
+                <h3>Boho Vibes - Beaded Necklace</h3>
+                <p class="price">₹999.00 <span class="old-price">₹1,799.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace10.jpg" alt="Crystal Pendant Necklace">
+                <h3>Crystal Glow - Pendant Necklace</h3>
+                <p class="price">₹1,899.00 <span class="old-price">₹2,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace11.jpg" alt="Silver Charm Necklace">
+                <h3>Silver Charm - Elegant Necklace</h3>
+                <p class="price">₹1,499.00 <span class="old-price">₹2,199.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace12.jpg" alt="Vintage Pearl Necklace">
+                <h3>Vintage Pearl - Timeless Beauty</h3>
+                <p class="price">₹1,799.00 <span class="old-price">₹2,099.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace13.jpg" alt="Gold Floral Necklace">
+                <h3>Floral Radiance - Gold Necklace</h3>
+                <p class="price">₹3,299.00 <span class="old-price">₹4,299.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace14.jpg" alt="Opal Gem Necklace">
+                <h3>Opal Essence - Gem Necklace</h3>
+                <p class="price">₹4,599.00 <span class="old-price">₹5,799.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace15.jpg" alt="Minimalist Silver Necklace">
+                <h3>Minimalist - Silver Necklace</h3>
+                <p class="price">₹1,899.00 <span class="old-price">₹2,599.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace16.jpg" alt="Luxury Pearl Strand Necklace">
+                <h3>Luxury Pearl - Strand Necklace</h3>
+                <p class="price">₹2,799.00 <span class="old-price">₹4,299.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace17.jpg" alt="Garnet Stone Necklace">
+                <h3>Garnet Glow - Stone Necklace</h3>
+                <p class="price">₹3,799.00 <span class="old-price">₹4,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace18.jpg" alt="Turquoise Bead Necklace">
+                <h3>Turquoise - Bead Necklace</h3>
+                <p class="price">₹1,299.00 <span class="old-price">₹2,199.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace19.jpg" alt="Diamond Halo Necklace">
+                <h3>Diamond - Statement Necklace</h3>
+                <p class="price">₹5,999.00 <span class="old-price">₹7,499.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/necklace20.jpg" alt="Celestial Moon Necklace">
+                <h3>Celestial Dream - Moon Necklace</h3>
+                <p class="price">₹2,899.00 <span class="old-price">₹3,799.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+
+
+        </div>
+    </section>
+    <link rel="stylesheet" href="../css/footer.css">
+    <div id="footer-placeholder"></div>
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/add_to_cart.js"></script>
+</body>
+
+</html>

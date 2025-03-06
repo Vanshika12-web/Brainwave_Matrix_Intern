@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracelets Collection</title>
+    <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+
+    <link rel="stylesheet" href="../css/page.css">
+    <script src="../js/page.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/header.css">
+    <div id="header-placeholder"></div>
+    <script src="../js/header.js"></script>
+
+
+
+    <section class="rings-collection">
+        <div class="rings-title">Bracelets<div class="filter-sort">
+            </div>
+            <span class="allgin-sort">
+                <p class="subtitle">"Exquisite Bracelets for Every Occasion"!!</p>
+                <select id="sort-options">
+                    <option value="default">Sort by Position</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="name-a-z">Name: A-Z</option>
+                    <option value="name-z-a">Name: Z-A</option>
+                </select>
+            </span>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../images/bracelet1.jpg" alt="Silver Charm Bracelet">
+                <h3>Elegant Charm - Silver Bracelet</h3>
+                <p class="price">₹799.00 <span class="old-price">₹999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet2.jpg" alt="Gold Plated Bracelet">
+                <h3>Golden Grace - Plated Bracelet</h3>
+                <p class="price">₹1,299.00 <span class="old-price">₹1,599.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet3.jpg" alt="Pearl Elegance Bracelet">
+                <h3>Pearl Elegance - Classic Bracelet</h3>
+                <p class="price">₹899.00 <span class="old-price">₹1,299.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet4.jpg" alt="Diamond Studded Bracelet">
+                <h3>Diamond Sparkle - Studded Bracelet</h3>
+                <p class="price">₹4,999.00 <span class="old-price">₹6,499.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet5.jpg" alt="Sapphire Stone Bracelet">
+                <h3>Sapphire Bliss - Stone Bracelet</h3>
+                <p class="price">₹3,599.00 <span class="old-price">₹4,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet6.jpg" alt="Emerald Bangle Bracelet">
+                <h3>Emerald Glow - Bangle Bracelet</h3>
+                <p class="price">₹2,799.00 <span class="old-price">₹3,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet7.jpg" alt="Ruby Gem Bracelet">
+                <h3>Ruby Radiance - Gem Bracelet</h3>
+                <p class="price">₹5,199.00 <span class="old-price">₹6,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet8.jpg" alt="Platinum Infinity Bracelet">
+                <h3>Infinity Shine - Platinum Bracelet</h3>
+                <p class="price">₹6,799.00 <span class="old-price">₹8,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet9.jpg" alt="Twist Rope Bracelet">
+                <h3>Twist Rope - Fashion Bracelet</h3>
+                <p class="price">₹1,099.00 <span class="old-price">₹1,799.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet10.jpg" alt="Rose Gold Link Bracelet">
+                <h3>Rose Gold Link - Elegant Bracelet</h3>
+                <p class="price">₹2,499.00 <span class="old-price">₹3,699.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/bracelet11.jpg" alt="Crystal Bead Bracelet">
+                <h3>Crystal Beads - Fashion Bracelet</h3>
+                <p class="price">₹899.00 <span class="old-price">₹1,199.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet12.jpg" alt="Turquoise Stone Bracelet">
+                <h3>Turquoise Touch - Stone Bracelet</h3>
+                <p class="price">₹1,499.00 <span class="old-price">₹1,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet13.jpg" alt="Minimalist Chain Bracelet">
+                <h3>Minimalist Chain - Elegant Bracelet</h3>
+                <p class="price">₹799.00 <span class="old-price">₹1,099.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet14.jpg" alt="Amethyst Gem Bracelet">
+                <h3>Amethyst Glow - Gem Bracelet</h3>
+                <p class="price">₹2,399.00 <span class="old-price">₹3,099.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet15.jpg" alt="Adjustable Leather Bracelet">
+                <h3>Leather Luxe - Adjustable Bracelet</h3>
+                <p class="price">₹1,199.00 <span class="old-price">₹1,599.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet16.jpg" alt="Infinity Knot Bracelet">
+                <h3>Infinity Knot - Stylish Bracelet</h3>
+                <p class="price">₹1,699.00 <span class="old-price">₹2,299.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet17.jpg" alt="Cubic Zirconia Bracelet">
+                <h3>Cubic Sparkle - Zirconia Bracelet</h3>
+                <p class="price">₹2,299.00 <span class="old-price">₹3,299.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet18.jpg" alt="Multi-layer Chain Bracelet">
+                <h3>Layered Chains - Trendy Bracelet</h3>
+                <p class="price">₹899.00 <span class="old-price">₹1,499.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet19.jpg" alt="Hematite Healing Bracelet">
+                <h3>Hematite Calm - Healing Bracelet</h3>
+                <p class="price">₹799.00 <span class="old-price">₹1,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet20.jpg" alt="Boho Beaded Bracelet">
+                <h3>Boho Vibes - Beaded Bracelet</h3>
+                <p class="price">₹499.00 <span class="old-price">₹1,099.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="../css/footer.css">
+    <div id="footer-placeholder"></div>
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/add_to_cart.js"></script>
+</body>
+
+</html>

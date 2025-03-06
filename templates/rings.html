@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rings Collection</title>
+    <link rel="icon" type="image/jpeg" href="../images/favicon.jpg">
+
+    <link rel="stylesheet" href="../css/page.css">
+    <script src="../js/page.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/header.css">
+    <div id="header-placeholder"></div>
+    <script src="../js/header.js"></script>
+
+
+    <section class="rings-collection">
+        <div class="rings-title">Rings<div class="filter-sort">
+            </div>
+            <span class="allgin-sort">
+                <p class="subtitle">"Add Some Hilarity to Your Outfit with Our Jewelry"!!</p>
+                <select id="sort-options">
+                    <option value="default">Sort by Position</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="name-a-z">Name: A-Z</option>
+                    <option value="name-z-a">Name: Z-A</option>
+                </select>
+            </span>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../images/ring1.jpg" alt="Silver Adjustable Ring">
+                <h3>Life in a Zig-Zag - Silver Ring</h3>
+                <p class="price">₹899.00 <span class="old-price">₹1,119.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring2.jpg" alt="Moon Ring">
+                <h3>The Fresh Bloom - Moon Ring</h3>
+                <p class="price">₹1,200.00 <span class="old-price">₹1,799.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring3.jpg" alt="Gemstone Ring">
+                <h3>The Pure - Gemstone Ring</h3>
+                <p class="price">₹1,799.00 <span class="old-price">₹2,200.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring4.jpg" alt="Royal Crown Ring">
+                <h3>Royal Crown - Gold Plated Ring</h3>
+                <p class="price">₹1,250.00 <span class="old-price">₹2,499.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring5.jpg" alt="Eternal Heart Ring">
+                <h3>Eternal Heart - Diamond Ring</h3>
+                <p class="price">₹5,999.00 <span class="old-price">₹6,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring6.jpg" alt="Infinity Loop Ring">
+                <h3>Infinity Loop - Platinum Ring</h3>
+                <p class="price">₹3,799.00 <span class="old-price">₹5,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring7.jpg" alt="Pearl Essence Ring">
+                <h3>Pearl Essence - Classic Pearl Ring</h3>
+                <p class="price">₹1,150.00 <span class="old-price">₹2,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring8.jpg" alt="Starlight Sparkle Ring">
+                <h3>Starlight Sparkle - Zircon Ring</h3>
+                <p class="price">₹999.00 <span class="old-price">₹1,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring9.jpg" alt="Mystic Opal Ring">
+                <h3>Mystic Opal - Vintage Ring</h3>
+                <p class="price">₹2,150.00 <span class="old-price">₹3,899.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring10.jpg" alt="Ruby Royale Ring">
+                <h3>Ruby Royale - Gemstone Ring</h3>
+                <p class="price">₹5,599.00 <span class="old-price">₹7,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring11.jpg" alt="Golden Twirl Ring">
+                <h3>Golden Twirl - Designer Ring</h3>
+                <p class="price">₹3,250.00 <span class="old-price">₹5,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring12.jpg" alt="Sapphire Elegance Ring">
+                <h3>Sapphire Elegance - Royal Blue Ring</h3>
+                <p class="price">₹7,899.00 <span class="old-price">₹9,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring13.jpg" alt="Rose Gold Bloom Ring">
+                <h3>Rose Gold Bloom - Fashion Ring</h3>
+                <p class="price">₹2,999.00 <span class="old-price">₹4,500.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring14.jpg" alt="Dazzling Diamond Ring">
+                <h3>Dazzling Diamond - Engagement Ring</h3>
+                <p class="price">₹9,499.00 <span class="old-price">₹12,999.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="toggleWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring15.jpg" alt="Silver Spark Ring">
+                <h3>Silver Spark - Sterling Ring</h3>
+                <p class="price">₹1,299.00 <span class="old-price">₹2,599.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring16.jpg" alt="Celestial Star Ring">
+                <h3>Celestial Star - Statement Ring</h3>
+                <p class="price">₹3,199.00 <span class="old-price">₹5,499.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring17.jpg" alt="Ethereal Moonstone Ring">
+                <h3>Ethereal Moonstone - Mystic Ring</h3>
+                <p class="price">₹2,599.00 <span class="old-price">₹4,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring18.jpg" alt="Glowing Halo Ring">
+                <h3>Glowing Halo - Crystal Ring</h3>
+                <p class="price">₹999.00 <span class="old-price">₹1,799.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring19.jpg" alt="Twilight Amethyst Ring">
+                <h3>Twilight Amethyst - Gemstone Ring</h3>
+                <p class="price">₹3,699.00 <span class="old-price">₹6,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="../images/ring20.jpg" alt="Majestic Emerald Ring">
+                <h3>Majestic Emerald - Royal Jewel Ring</h3>
+                <p class="price">₹5,599.00 <span class="old-price">₹7,000.00</span></p>
+                <i class="fa-regular fa-heart wishlist-icon1" onclick="addToWishlist(this)"></i>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="../css/footer.css">
+    <div id="footer-placeholder"></div>
+    <script src="../js/footer.js"></script>
+    <script src="../js/add_to_cart.js"></script>
+</body>
+
+</html>
